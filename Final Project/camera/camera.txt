@@ -1,0 +1,49 @@
+ý a: kiểm tra tính hợp lệ vật thể:
+	
+	là hình hộp chữ nhật
+		hàm tính khoảng cách giữa 2 toạ độ
+		tính độ dài 12 cạnh
+			012345678 
+			0 134
+			1 0 25
+			2 1 36
+			3 02 7
+			4 0 57
+			5 14 6
+			6 25 7
+			7 346
+		12 độ dài có 3 giá trị khác nhau
+		tính 3 góc ở đỉnh A
+			tichvh(01,03)
+			tichvh(01,04)
+			tichvh(03,04)
+
+	nằm trong phòng 
+		kiểm tra lần lượt từng đỉnh nằm trong phòng
+			1 đỉnh: tính thể tích 6 hình chóp cộng lại (thêm đoạn thể tích 1 hình chóp =0 => điểm ấy nằm trên mặt đó)
+
+			công thức tính thể tích hhcn từ 8 toạ độ:
+			công thức tính thể tích hchop từ 5 toạ độ:
+
+	nếu k txuc sàn thì phải nằm trên vật khác
+		hàm tìm ptmp của đáy phòng: return mnpq
+		kiểm tra A(vật) thuộc ptmp đáy phòng
+			nếu không:
+				hàm tìm ptmp của mặt trên vật
+				kiểm tra A(vật mới) có thuộc mặt trên vật cũ	
+
+
+ý b: kiểm tra tính hợp lệ camera:
+	nằm trong phòng
+		nằm trong phòng?
+
+ý c:
+	*note: hàm tính khoảng cách từ 1 đỉnh đến 1 ptmp
+	Điểm thuộc vật thể (trong lòng hoặc trên bề mặt)
+		nhập vào 1 điểm X: 
+		chạy listvatthe: kiểm tra X nằm trong vật thể nào hay k? nếu nằm trong xem có nằm trên mặt nào k
+	
+	điểm k thuộc vật thể
+		Điểm không thuộc vật thể và nằm trong vùng nhìn được của một camera nào đó (nếu phòng có nhiều hơn một camera)
+		Điểm không thuộc vật thể và không nằm trong vùng nhìn được của bất kỳ camera nào
+
